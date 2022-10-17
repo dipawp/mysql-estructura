@@ -259,13 +259,13 @@ and data_comanda >= '2021-01-01' and data_comanda <= '2022-12-31'*/;
 /*select ullera.marca from ullera
 inner join comanda
 on comanda.ullera_id = ullera.id where comanda.empleat_id = 1 and 
-comanda.data_comanda >= '2022-01-01' and data_comanda <= '2022-12-31'*/;
+comanda.data_comanda >= '2022-01-01' and data_comanda <= '2022-12-31';*/
 
 -- Llista els diferents proveïdors que han subministrat ulleres venudes amb èxit per l'òptica.
 /*select count(proveidor.id), proveidor.nom, proveidor.id from proveidor
 inner join comanda
 on proveidor.id = comanda.proveidor_id 
-group by proveidor.nom, proveidor.id order by proveidor.id*/;
+group by proveidor.nom, proveidor.id order by proveidor.id;*/
 
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
